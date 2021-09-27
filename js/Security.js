@@ -47,12 +47,11 @@ class Security {
         });
 
         // On mousePressed, check the input condition. 
-        this.button3.mouse(() => {
+        this.button3.mousePressed(() => {
             if(system.authenticate(accessCode3,this.access3.value())){
                 this.button3.hide();
                 this.access3.hide();
                 score++;
-                score.update()
             }
         });
 
